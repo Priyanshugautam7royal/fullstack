@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets how the page displays text (UTF-8 works for all languages) -->
+    <meta charset="UTF-8">
+    <!-- Makes the page fit on mobile phones and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Shows a description of the page in Google search results -->
+    <meta name="description" content="A comprehensive HTML page demonstrating all major HTML elements">
+    <!-- Tells Google what this page is about -->
+    <meta name="keywords" content="HTML, elements, semantic markup">
+    <!-- Says who made this page -->
+    <meta name="author" content="Developer">
+    <!-- The text that shows in the browser tab -->
+    <title>Comprehensive HTML Page</title>
+    <!-- Links to the CSS file that makes the page look nice -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The top section of the page with title and intro text -->
+    <header>
+        <!-- The main title of the page (use only one per page) -->
+        <h1>Welcome to Full Stack Development</h1>
+        <!-- A paragraph of text -->
+        <p>A complete guide to HTML elements</p>
+    </header>
+
+    <!-- Navigation menu with links to jump to different sections -->
+    <nav>
+        <!-- A list of items (with bullet points) -->
+        <ul>
+            <!-- One item in the list -->
+            <!-- A clickable link that jumps to another part of the page -->
+            <li><a href="#text">Text Elements</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#table">Tables</a></li>
+        </ul>
+    </nav>
+
+    <!-- The main content area of the page (use only one per page) -->
+    <main>
+        <!-- A section that groups related content together -->
+        <section id="text">
+            <!-- A heading for this section (smaller than h1) -->
+            <h2>Text Elements</h2>
+            <!-- A self-contained block of content like a blog post -->
+            <article>
+                <!-- An even smaller heading for a subsection -->
+                <h3>Headings and Paragraphs</h3>
+                <!-- A paragraph - a block of text -->
+                <!-- Makes text bold and shows it's important -->
+                <!-- Makes text italic and shows emphasis -->
+                <!-- Highlights text with a background color -->
+                <p>This is a <strong>paragraph</strong> with <em>emphasized</em> text and <mark>highlighted</mark> content.</p>
+                <!-- Shows computer code in a monospace font -->
+                <!-- Shows what keys the user should press -->
+                <!-- Shows a variable or mathematical symbol -->
+                <p>You can also use <code>inline code</code>, <kbd>keyboard input</kbd>, and <var>variables</var>.</p>
+                <!-- A long quote with indentation -->
+                <blockquote>This is a blockquote that contains a longer piece of quoted text.</blockquote>
+                <!-- Makes text smaller (for fine print) -->
+                <!-- Shows text with a line through it (deleted) -->
+                <!-- Shows text that was added/inserted -->
+                <p><small>This is small text</small> and <del>deleted text</del> and <ins>inserted text</ins>.</p>
+                <!-- Text that goes up (like for footnotes) -->
+                <!-- Text that goes down (like for H2O) -->
+                <p><sup>Superscript</sup> and <sub>subscript</sub> are also available.</p>
+                <!-- Short form of a word; shows full text on hover -->
+                <p><abbr title="Hypertext Markup Language">HTML</abbr> is the standard markup language.</p>
+                <!-- Contact information (email, phone, address, etc.) -->
+                <address>Contact us at: <a href="mailto:info@example.com">info@example.com</a></address>
+            </article>
+        </section>
+
+        <!-- A section about lists -->
+        <section id="lists">
+            <!-- Section heading -->
+            <h2>Lists</h2>
+            <article>
+                <!-- Subsection heading -->
+                <h3>Unordered List</h3>
+                <!-- A list with bullet points (no order) -->
+                <ul>
+                    <!-- One item in the list -->
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <!-- A list inside another list (indented) -->
+                    <li>Third item with nested list
+                        <ul>
+                            <li>Nested item 1</li>
+                            <li>Nested item 2</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Subsection heading -->
+                <h3>Ordered List</h3>
+                <!-- A numbered list (1, 2, 3...) -->
+                <ol>
+                    <!-- Items with numbers -->
+                    <li>First step</li>
+                    <li>Second step</li>
+                    <li>Third step</li>
+                </ol>
+
+                <!-- Subsection heading -->
+                <h3>Description List</h3>
+                <!-- A list of words with their definitions (like a dictionary) -->
+                <dl>
+                    <!-- The word or term being defined -->
+                    <dt>HTML</dt>
+                    <!-- The definition or explanation of the term -->
+                    <dd>HyperText Markup Language for creating web pages</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets for styling web pages</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Programming language for interactive web pages</dd>
+                </dl>
+            </article>
+        </section>
+
+        <!-- A section about forms -->
+        <section id="forms">
+            <!-- Section heading -->
+            <h2>Forms</h2>
+            <article>
+                <!-- A form to collect user input; action="where to send" method="how to send" -->
+                <form action="#" method="POST">
+                    <!-- Groups related form fields together -->
+                    <fieldset>
+                        <!-- A label/title for this group of fields -->
+                        <legend>Personal Information</legend>
+                        
+                        <!-- A label that describes the input field -->
+                        <label for="name">Name:</label>
+                        <!-- A text input box where user types (single line) -->
+                        <!-- required means user must fill this out -->
+                        <input type="text" id="name" name="name" required>
+                        
+                        <!-- Label for email -->
+                        <label for="email">Email:</label>
+                        <!-- An email input box (checks if it's a real email) -->
+                        <input type="email" id="email" name="email" required>
+                        
+                        <!-- Label for phone -->
+                        <label for="phone">Phone:</label>
+                        <!-- A phone number input (shows number keyboard on mobile) -->
+                        <input type="tel" id="phone" name="phone">
+                        
+                        <!-- Label for password -->
+                        <label for="password">Password:</label>
+                        <!-- A password input (hides what you type with dots) -->
+                        <input type="password" id="password" name="password" required>
+                        
+                        <!-- Label for date -->
+                        <label for="date">Birth Date:</label>
+                        <!-- A date picker (user picks month/day/year) -->
+                        <input type="date" id="date" name="date">
+                        
+                        <!-- Label for color -->
+                        <label for="color">Favorite Color:</label>
+                        <!-- A color picker (lets you choose a color) -->
+                        <input type="color" id="color" name="color">
+                    </fieldset>
+
+                    <!-- Second group for preferences -->
+                    <fieldset>
+                        <!-- Label for this group -->
+                        <legend>Preferences</legend>
+                        
+                        <!-- Label for radio buttons -->
+                        <label>Gender:</label>
+                        <!-- Radio buttons - pick ONE option -->
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                        
+                        <!-- Label for checkboxes -->
+                        <label>Interests:</label>
+                        <!-- Checkboxes - pick MULTIPLE options -->
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label>
+                        <input type="checkbox" id="coding" name="interests" value="coding">
+                        <label for="coding">Coding</label>
+                        
+                        <!-- Label for dropdown -->
+                        <label for="country">Country:</label>
+                        <!-- A dropdown menu (user picks one from list) -->
+                        <select id="country" name="country">
+                            <!-- A choice in the dropdown -->
+                            <option>Select a country</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                        
+                        <!-- Label for range slider -->
+                        <label for="experience">Years of Experience:</label>
+                        <!-- A slider to pick a number between min and max -->
+                        <input type="range" id="experience" name="experience" min="0" max="50">
+                        
+                        <!-- Label for text area -->
+                        <label for="message">Message:</label>
+                        <!-- A big text box for long messages (multiple lines) -->
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+                        
+                        <!-- A button to send the form -->
+                        <button type="submit">Submit</button>
+                        <!-- A button to clear all fields and start over -->
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+        <!-- A section about media (images, videos, audio) -->
+        <section id="media">
+            <!-- Section heading -->
+            <h2>Media Elements</h2>
+            <article>
+                <!-- Subsection heading -->
+                <h3>Image</h3>
+                <!-- Displays an image on the page -->
+                <!-- src = the path to the image file -->
+                <!-- alt = text shown if image doesn't load (important!) -->
+                <!-- title = text shown when you hover over the image -->
+                <img src="https://via.placeholder.com/400x300" alt="Placeholder Image" title="Sample Image">
+                <!-- Shows different images based on screen size (for mobile/desktop) -->
+                <!-- Shows a larger image on big screens, smaller on mobile -->
+                <picture>
+                    <source media="(min-width: 768px)" srcset="https://via.placeholder.com/800x600">
+                    <img src="https://via.placeholder.com/400x300" alt="Responsive Image">
+                </picture>
+
+                <!-- Subsection heading -->
+                <h3>Audio</h3>
+                <!-- Plays an audio file (like an mp3) -->
+                <!-- controls = shows play/pause/volume buttons -->
+                <audio controls>
+                    <!-- The audio file to play -->
+                    <!-- type = what kind of audio file it is -->
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <!-- Subsection heading -->
+                <h3>Video</h3>
+                <!-- Plays a video file (like an mp4) -->
+                <!-- width/height = size of the video -->
+                <!-- controls = show play/pause/progress buttons -->
+                <!-- poster = image shown before video plays -->
+                <video width="400" height="300" controls poster="https://via.placeholder.com/400x300">
+                    <!-- The video file to play -->
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+
+                <!-- Subsection heading -->
+                <h3>Iframe</h3>
+                <!-- Embeds another webpage inside this page (like a YouTube video) -->
+                <!-- src = the website to show inside -->
+                <!-- width/height = the size of the embedded content -->
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube Video"></iframe>
+
+                <!-- Subsection heading -->
+                <h3>SVG</h3>
+                <!-- SVG = draws shapes with code instead of images -->
+                <!-- viewBox = the area we're drawing in (like a canvas) -->
+                <svg width="200" height="200" viewBox="0 0 100 100">
+                    <!-- Draws a circle: cx=center x, cy=center y, r=radius -->
+                    <circle cx="50" cy="50" r="40" fill="blue" />
+                    <!-- Draws a rectangle: x/y=position, width/height=size -->
+                    <rect x="20" y="20" width="60" height="60" fill="red" opacity="0.5" />
+                </svg>
+
+                <!-- Subsection heading -->
+                <h3>Canvas</h3>
+                <!-- A blank drawing area that you draw on with JavaScript -->
+                <!-- id = name to use in JavaScript -->
+                <canvas id="canvas" width="200" height="200" style="border:1px solid #000;"></canvas>
+                <!-- JavaScript code that draws on the canvas -->
+                <script>
+                    const canvas = document.getElementById('canvas');
+                    if (canvas.getContext) {
+                        const ctx = canvas.getContext('2d');
+                        ctx.fillStyle = 'green';
+                        ctx.fillRect(10, 10, 100, 100);
+                    }
+                </script>
+            </article>
+        </section>
+
+        <!-- A section about tables (organizing data in rows and columns) -->
+        <section id="table">
+            <!-- Section heading -->
+            <h2>Tables</h2>
+            <article>
+                <!-- Creates a table to organize data -->
+                <!-- border = shows lines around cells -->
+                <!-- cellpadding = space inside each cell -->
+                <!-- cellspacing = space between cells -->
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <!-- A title/caption for the table -->
+                    <caption>Sample Data Table</caption>
+                    <!-- The header row (first row with column names) -->
+                    <thead>
+                        <!-- One row in the table -->
+                        <tr>
+                            <!-- A table header cell (bold text, centered) -->
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Department</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <!-- The main data rows -->
+                    <tbody>
+                        <!-- One row of data -->
+                        <tr>
+                            <!-- A regular data cell -->
+                            <td>John Doe</td>
+                            <td>Developer</td>
+                            <td>Engineering</td>
+                            <td>$80,000</td>
+                        </tr>
+                        <!-- Another row -->
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Manager</td>
+                            <td>Management</td>
+                            <td>$95,000</td>
+                        </tr>
+                        <!-- Third row -->
+                        <tr>
+                            <td>Bob Johnson</td>
+                            <td>Designer</td>
+                            <td>Design</td>
+                            <td>$75,000</td>
+                        </tr>
+                    </tbody>
+                    <!-- The footer row (summary/totals) -->
+                    <tfoot>
+                        <!-- Footer row -->
+                        <tr>
+                            <!-- Spans across 3 columns (instead of using 3 cells) -->
+                            <td colspan="3">Average Salary</td>
+                            <!-- Regular cell -->
+                            <td>$83,333</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+        <!-- A section about interactive elements -->
+        <section>
+            <!-- Section heading -->
+            <h2>Semantic HTML Elements</h2>
+            <article>
+                <!-- Subsection heading -->
+                <h3>Article with Details</h3>
+                <!-- A collapsible/expandable box (click to show/hide) -->
+                <details>
+                    <!-- The text that's always shown (like a title) -->
+                    <summary>Click to expand</summary>
+                    <!-- The hidden content shown when you click -->
+                    <p>This is additional content that can be hidden or shown.</p>
+                </details>
+
+                <!-- Subsection heading -->
+                <h3>Progress Bar</h3>
+                <!-- Shows how much work is done (like a download progress bar) -->
+                <!-- value = how much is done, max = total amount -->
+                <progress value="70" max="100"></progress>
+
+                <!-- Subsection heading -->
+                <h3>Meter</h3>
+                <!-- Shows a measurement or gauge (like a speedometer or temperature) -->
+                <!-- value = current reading, min/max = the range -->
+                <meter value="6" min="0" max="10"></meter>
+            </article>
+        </section>
+
+        <!-- A side section with extra info (like a sidebar) -->
+        <!-- Usually has related links, ads, or extra information -->
+        <aside>
+            <!-- Subsection heading -->
+            <h3>Related Links</h3>
+            <!-- A list of links -->
+            <ul>
+                <!-- One link item -->
+                <li><a href="https://www.w3.org/HTML/">W3C HTML Specification</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/">MDN HTML Documentation</a></li>
+                <li><a href="https://caniuse.com/">CanIUse - Browser Support</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- The bottom section of the page with copyright and footer links -->
+    <footer>
+        <!-- A paragraph with copyright symbol and year -->
+        <p>&copy; 2026 Full Stack Development. All rights reserved.</p>
+        <!-- A list of footer links -->
+        <ul>
+            <!-- Footer link items -->
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- Links to external JavaScript file that adds interactivity to the page -->
+    <script src="script.js"></script>
+</body>
+</html>
