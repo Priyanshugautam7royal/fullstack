@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Properties Playground</title>
+
+  <!-- LINK YOUR CSS FILE HERE -->
+  <link rel="stylesheet" href="css-commands.css" />
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header id="header">
+    <h1>CSS Properties Playground</h1>
+    <p>Test all CSS selectors, layout, and print rules</p>
+  </header>
+
+  <!-- ================= SELECTORS ================= -->
+  <section class="container">
+    <h2>Selectors</h2>
+
+    <p>This paragraph tests element selector</p>
+
+    <div>
+      <p>Descendant selector working</p>
+    </div>
+
+    <ul>
+      <li>First child</li>
+      <li>Second child</li>
+      <li>Last child</li>
+    </ul>
+
+    <input type="text" placeholder="Text input" />
+    <input type="checkbox" checked /> Checked
+    <br /><br />
+
+    <a href="#">Hover, focus, active, visited</a>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= BOX MODEL ================= -->
+  <section class="container box">
+    <h2>Box Model</h2>
+    <p>Margin, padding, border, radius</p>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= DISPLAY ================= -->
+  <section class="container">
+    <h2>Display</h2>
+
+    <span class="inline-element">Inline</span>
+    <span class="inline-element">Inline</span>
+
+    <div class="inline-block-element">Inline-Block</div>
+    <div class="inline-block-element">Inline-Block</div>
+
+    <div class="block-element">Block Element</div>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= FLEX ================= -->
+  <section class="container flex-container">
+    <div class="flex-item">Flex 1</div>
+    <div class="flex-item">Flex 2</div>
+    <div class="flex-item">Flex 3</div>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= GRID ================= -->
+  <section class="container grid-container">
+    <div class="grid-item">Grid A</div>
+    <div class="grid-item">Grid B</div>
+    <div class="grid-item">Grid C</div>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= POSITION ================= -->
+  <section class="container positioned-relative">
+    <h2>Positioning</h2>
+    <div class="positioned-absolute">Absolute</div>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= TYPOGRAPHY ================= -->
+  <section class="container text-styling">
+    <h2>Typography</h2>
+    <p>This text tests typography styles.</p>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= COLORS & EFFECTS ================= -->
+  <section class="container colors effects">
+    <h2>Colors & Effects</h2>
+    <p>Backgrounds, shadows, filters</p>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= TRANSFORM & ANIMATION ================= -->
+  <section class="container">
+    <div class="transform-element transition-element animated-element">
+      Transform + Transition + Animation
+    </div>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= OVERFLOW ================= -->
+  <section class="container overflow-element">
+    <p>
+      This is a long text to test overflow behavior. This is a long text to test
+      overflow behavior. This is a long text to test overflow behavior.
+    </p>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= LIST ================= -->
+  <section class="container">
+    <ul class="list-styling">
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= TABLE ================= -->
+  <section class="container">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>Developer</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>Designer</td>
+      </tr>
+    </table>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= FORM STATES ================= -->
+  <section class="container">
+    <input type="email" placeholder="Valid email" required />
+    <input type="text" disabled value="Disabled input" />
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- ================= VARIABLES ================= -->
+  <section class="container variable-element">
+    <h2>CSS Variables</h2>
+    <p>Using custom properties</p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="container no-print">
+    <p>This footer will NOT print</p>
+  </footer>
+
+</body>
+</html>
