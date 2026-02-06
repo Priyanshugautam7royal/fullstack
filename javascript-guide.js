@@ -179,7 +179,7 @@ colors.forEach((color, index) => {
 
 
 // ============================================
-// 5. ARRAYS
+// 5. ARRAYS , mutable
 // ============================================
 
 // Array declaration
@@ -245,7 +245,7 @@ let reversed = [1, 2, 3].reverse(); // [3, 2, 1]
 let sorted = [3, 1, 4, 1, 5].sort(); // [1, 1, 3, 4, 5]
 
 // ============================================
-// 5.STRINGS
+// 6.STRINGS , immutable
 // ============================================
 
 // String methods:
@@ -282,7 +282,7 @@ console.log(spacedText.trim()); // "Hello"
 let words = text_.split(" "); // ["Hello", "World"]
   
 // ============================================
-// 6. FUNCTIONS
+// 7. FUNCTIONS
 // ============================================
 
 // Function declaration: Define reusable block of code
@@ -339,7 +339,7 @@ function sumAll(...numbers) {
 console.log(sumAll(1, 2, 3, 4, 5)); // 15
 
 // ============================================
-// 7. OBJECTS
+// 8. OBJECTS
 // ============================================
 
 // Object literal: Collection of key-value pairs
@@ -384,7 +384,7 @@ let { name: studentName, age: studentAge } = student;
 console.log(studentName, studentAge); // "Alice", 21
 
 // ============================================
-// 8. SPREAD OPERATOR
+// 9. SPREAD OPERATOR
 // ============================================
 
 // Spread operator: Expand array or object elements
@@ -401,7 +401,7 @@ let obj2 = { city: "NYC", country: "USA" };
 let mergedObj = { ...obj1, ...obj2 };
 
 // ============================================
-// 9. DOM (DOCUMENT OBJECT MODEL)
+// 10. DOM (DOCUMENT OBJECT MODEL)
 // ============================================
 
 // DOM: Represents HTML structure as objects
@@ -461,7 +461,7 @@ let children = element.children;
 let firstChild = element.firstChild;
 
 // ============================================
-// 10. EVENTS
+// 11. EVENTS
 // ============================================
 
 // Events: Actions triggered by user interaction
@@ -524,7 +524,7 @@ window.addEventListener("load", () => {
 // button.removeEventListener("click", functionName);
 
 // ============================================
-// 11. CALLBACKS
+// 12. CALLBACKS
 // ============================================
 
 // Callback: Function passed as argument to another function
@@ -576,7 +576,7 @@ numbers2.forEach((num, index) => {
 // }
 
 // ============================================
-// 12. PROMISES
+// 13. PROMISES
 // ============================================
 
 // Promise: Handle async operations more cleanly than callbacks
@@ -616,7 +616,7 @@ myPromise
   });
 
 // ============================================
-// 13. ASYNC/AWAIT
+// 14. ASYNC/AWAIT
 // ============================================
 
 // Async/Await: Cleaner way to handle promises
@@ -638,7 +638,7 @@ async function fetchData() {
 // fetchData();
 
 // ============================================
-// 14. FETCH API
+// 15. FETCH API
 // ============================================
 
 // Fetch API: Request data from server
@@ -710,7 +710,7 @@ async function deleteUser(id) {
 }
 
 // ============================================
-// 15. CLASSES
+// 16. CLASSES
 // ============================================
 
 // Classes: Blueprint for creating objects
@@ -807,7 +807,7 @@ person2.fullName = "Jane Smith";
 console.log(person2.fullName); // "Jane Smith"
 
 // ============================================
-// 16. CLOSURES
+// 17. CLOSURES
 // ============================================
 
 // Closure: Function that "remembers" variables from outer scope
@@ -846,7 +846,7 @@ console.log(user.getName()); // "John"
 // console.log(user.password); // undefined (private)
 
 // ============================================
-// 17. ERROR HANDLING
+// 18. ERROR HANDLING
 // ============================================
 
 // Try-catch: Handle errors gracefully
@@ -877,7 +877,7 @@ try {
 }
 
 // ============================================
-// 18. TEMPLATE LITERALS (STRING INTERPOLATION)
+// 19. TEMPLATE LITERALS (STRING INTERPOLATION)
 // ============================================
 
 // Template literals: Use backticks for string interpolation
@@ -903,7 +903,7 @@ let multiLine = `
 `;
 
 // ============================================
-// 19. DESTRUCTURING
+// 20. DESTRUCTURING
 // ============================================
 
 // Destructuring: Extract values from arrays or objects
@@ -929,7 +929,7 @@ let { country = "USA" } = { name: "John" };
 console.log(country); // "USA"
 
 // ============================================
-// 20. JSON (JAVASCRIPT OBJECT NOTATION)
+// 21. JSON (JAVASCRIPT OBJECT NOTATION)
 // ============================================
 
 // JSON: Format for storing and exchanging data
@@ -955,7 +955,7 @@ console.log(parsedObject.name); // "John"
 let prettyJson = JSON.stringify(employee, null, 2);
 
 // ============================================
-// 21. REGULAR EXPRESSIONS
+// 22. REGULAR EXPRESSIONS
 // ============================================
 
 // RegEx: Pattern for matching text
@@ -993,7 +993,7 @@ console.log(emailPattern.test("john@example.com")); // true
 console.log(emailPattern.test("invalid-email"));    // false
 
 // ============================================
-// 22. USEFUL TIPS AND TRICKS
+// 23. USEFUL TIPS AND TRICKS
 // ============================================
 
 // 1. Nullish coalescing: Use default if value is null/undefined
