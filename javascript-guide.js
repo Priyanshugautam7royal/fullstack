@@ -177,6 +177,7 @@ colors.forEach((color, index) => {
   console.log(index + ": " + color);
 });
 
+
 // ============================================
 // 5. ARRAYS
 // ============================================
@@ -243,6 +244,43 @@ let reversed = [1, 2, 3].reverse(); // [3, 2, 1]
 // sort(): Sort array
 let sorted = [3, 1, 4, 1, 5].sort(); // [1, 1, 3, 4, 5]
 
+// ============================================
+// 5.STRINGS
+// ============================================
+
+// String methods:
+
+
+// length: Get number of characters
+let text_ = "Hello World";
+console.log(text_.length); // 11
+
+// substring(): Extract part of string
+console.log(text_.substring(0, 5)); // "Hello"
+
+// slice(): Extract part of string (similar to array slice)
+console.log(text_.slice(6)); // "World"
+
+// indexOf(): Find position of substring
+console.log(text_.indexOf("World")); // 6
+
+// includes(): Check if string contains substring
+console.log(text_.includes("World")); // true
+
+// replace(): Replace substring with another
+console.log(text_.replace("World", "Universe")); // "Hello Universe"
+
+// toUpperCase() / toLowerCase(): Change case
+console.log(text_.toUpperCase()); // "HELLO WORLD"
+console.log(text_.toLowerCase()); // "hello world"
+
+// trim(): Remove whitespace from both ends
+let spacedText = "   Hello   ";
+console.log(spacedText.trim()); // "Hello"
+
+// split(): Convert string to array (opposite of join)
+let words = text_.split(" "); // ["Hello", "World"]
+  
 // ============================================
 // 6. FUNCTIONS
 // ============================================
